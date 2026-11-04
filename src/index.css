@@ -1,0 +1,44 @@
+/* index.css
+   Global styles. Most styling is done inline in the React components. */
+
+:root {
+  /* Base font: components without their own font settings inherit this */
+  font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.18px;
+  color: #222;
+  background: #fff;
+  /* The UI is designed with light colours, so always use light scrollbars
+     and form controls, even if the operating system is in dark mode */
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+/* The app fills the whole browser window */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Paragraphs have no default margin (filter questions rely on this) */
+p {
+  margin: 0;
+}
