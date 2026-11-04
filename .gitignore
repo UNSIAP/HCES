@@ -21,3 +21,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.quarto
